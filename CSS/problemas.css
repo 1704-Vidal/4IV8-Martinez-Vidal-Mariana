@@ -7,25 +7,25 @@
 .td_inf{
     align-items: center;
     justify-content: center;
-    width: 150;
+    width: 2px;
 
 }
 .input_text{
     align-items: center;
     justify-content: center;
-    size:12;
-    border-width: 2px;
+    size:15;
+    border-width: 3px;
     border-style: solid;
-    color: aqua;
+    color: rgba(12, 12, 11, 0.994);
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 20px;
 }
 *{
-    background-color: aquamarine;
+    background-color: rgba(233, 169, 102, 0.535);
 }
 p{
-    font-size: 16px;
+    font-size: 19px;
     align-items: center;
     justify-content: center;
-    color: #452884;
+    color: #63350a;
 }
