@@ -1,0 +1,188 @@
+*{
+    margin:1;
+    padding: 1;
+    box-sizing: border-box;
+  }
+  .container{
+   
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  
+  }
+  html,body{
+    
+    background-color: transparent;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYu792BRoRCwtMbVO1h2PxncWbPY8y-xj9Dg&usqp=CAU);
+    
+  }
+  header{
+    /*background: rgb(10, 2, 39);*/
+    background-color: transparent;
+    background-image: url(https://aws.admagazine.com/prod/designs/v1/assets/1379x690/66429.jpg) ;
+    width: 170%;
+    padding: 20px;
+    font-size:medium;
+    /*Flex*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  header .yop{
+    color:rgb(248, 248, 248);
+    font-size: 30px;
+    font-family:  'Cambria';
+    text-align: center;
+    font-size:xx-large;
+  }
+  header .yop img{
+    width:5rem;
+    
+    vertical-align: top;
+  }
+  header .yop a{
+    color:rgb(206, 117, 35);
+    font-size: 50px;
+    background-color: azure;
+   text-align: center;
+    text-decoration: none;
+    line-height: 4rem;
+    
+  }
+  header nav{
+    width: 50%;
+   /*Flex*/
+   display:flex;
+   flex-wrap: wrap;
+   align-items: center;
+  }
+  header nav a{
+    background-color: rgb(248, 248, 248);
+    color: rgb(106, 102, 102);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-style: italic;
+    /*display: inline-block;*/
+    /*FLEX*/
+    flex-grow: 1;
+  }
+  header nav a:hover{
+    background:rgb(226, 207, 154);
+  
+  }
+  .main{
+    background:rgb(200, 201, 199) ;
+    padding: 20px;
+  
+    /*flex: 1 1 70%;*/
+    flex: 1;
+  
+  }
+  .main article{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    text-align:center;
+    
+  }
+  .main article:nth-last-child(1){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  aside{
+    background: rgb(178, 186, 110);
+    padding: 20px;
+    /*Flex*/
+    /*flex:1 1 30%;*/
+    flex:0 0 200px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-center;
+  }
+  aside.widget{
+    background: rgb(233, 224, 224);
+    height: 150px;
+    margin: 10px;
+  }
+  
+  footer{
+    background: rgb(166, 167, 165);
+    width: 100%;
+    padding: 20px;
+  
+    /*Fñex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  footer .link{
+   background:#c0392b;
+   display: flex;
+   flex-wrap: wrap;
+  }
+  footer .link a{
+    flex-grow: 1;
+    color: rgb(200, 201, 199);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+  
+  }
+  footer .link a:hover{
+    background: #E74c3c;
+  }
+  footer .social{
+    background: #ccc;
+  
+  
+  }
+  footer .social a{
+    color: #999;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+  }
+  @media screen and (max-width:800px){
+    .container{
+      flex-direction: column;
+    }
+    header{
+      flex-direction: column;
+      padding: 0;
+    }
+    header .yop{
+      margin: 20px 0;
+    }
+    header nav{
+  
+    width: 100%;
+    }
+    aside{
+      flex-direction: row;
+      flex: 0;
+    }
+    aside .widget {
+      flex-grow: 1 ;
+    }
+  }
+  @media screen and (max-width:600px){
+    footer{
+      justify-content: space-around;
+    }
+  }
+
+ 
+  
+  
+  
